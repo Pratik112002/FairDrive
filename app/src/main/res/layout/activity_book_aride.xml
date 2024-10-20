@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookARideActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Current Location"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins"
+        android:textStyle="bold"
+        android:layout_margin="10dp">
+    </TextView>
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="20dp">
+    </fragment>
+    <TextView
+        android:id="@+id/txt_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Distance:"
+        android:textSize="15sp"
+        android:layout_margin="20dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/txt_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20sp"
+        android:elegantTextHeight="true"
+        android:hint="Enter Location"
+        android:importantForAutofill="yes"
+        android:textColorHint="#546E7A"
+        android:singleLine="true"
+        android:autofillHints="null"
+        tools:ignore="TextFields,VisualLintTextFieldSize">
+    </EditText>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_search"
+        android:layout_width="287dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rounded_corners"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="Search"
+        android:textColor="@color/white"
+        android:textSize="20sp">
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_book"
+        android:layout_width="287dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rounded_corners"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="Book"
+        android:textColor="@color/white"
+        android:textSize="20sp">
+    </androidx.appcompat.widget.AppCompatButton>
+
+</LinearLayout>
